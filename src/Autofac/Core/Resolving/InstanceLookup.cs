@@ -97,7 +97,7 @@ namespace Autofac.Core.Resolving
             }
             catch (Exception ex)
             {
-                throw new DependencyResolutionException($"An exception was thrown while activating {ComponentRegistration}. Error: {ex}", ex));
+                throw new DependencyResolutionException($"An exception was thrown while activating {ComponentRegistration}. Error: {ex}", ex);
             }
 
             if (ComponentRegistration.Ownership == InstanceOwnership.OwnedByLifetimeScope)
