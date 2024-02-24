@@ -46,7 +46,7 @@ namespace Autofac.Features.Metadata
             if (!typeof(TMetadata).GetTypeInfo().IsClass)
             {
                 throw new DependencyResolutionException(
-                    string.Format(CultureInfo.CurrentCulture, MetadataViewProviderResources.InvalidViewImplementation, typeof(TMetadata).Name));
+                    string.Format(CultureInfo.CurrentCulture, "MetadataViewProviderResources.InvalidViewImplementation", typeof(TMetadata).Name));
             }
 
             var ti = typeof(TMetadata);
@@ -96,7 +96,7 @@ namespace Autofac.Features.Metadata
             }
 
             throw new DependencyResolutionException(
-                string.Format(CultureInfo.CurrentCulture, MetadataViewProviderResources.InvalidViewImplementation, typeof(TMetadata).Name));
+                string.Format(CultureInfo.CurrentCulture, "MetadataViewProviderResources.InvalidViewImplementation", typeof(TMetadata).Name));
         }
 
         private static TValue GetMetadataValue<TValue>(IDictionary<string, object> metadata, string name, DefaultValueAttribute defaultValue)
@@ -109,7 +109,7 @@ namespace Autofac.Features.Metadata
                 return (TValue)defaultValue.Value;
 
             throw new DependencyResolutionException(
-                string.Format(CultureInfo.CurrentCulture, MetadataViewProviderResources.MissingMetadata, name));
+                string.Format(CultureInfo.CurrentCulture, "MetadataViewProviderResources.MissingMetadata", name));
         }
     }
 }

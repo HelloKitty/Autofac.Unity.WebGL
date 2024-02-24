@@ -59,7 +59,7 @@ namespace Autofac.Core.Registration
         {
             if (service == null) throw new ArgumentNullException(nameof(service));
 
-            return string.Format(CultureInfo.CurrentCulture, ComponentNotRegisteredExceptionResources.Message, service);
+            return string.Format(CultureInfo.CurrentCulture, "ComponentNotRegisteredExceptionResources.Message", service);
         }
     }
 }

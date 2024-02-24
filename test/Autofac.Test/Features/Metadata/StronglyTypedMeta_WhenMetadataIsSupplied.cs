@@ -74,7 +74,7 @@ namespace Autofac.Test.Features.Metadata
                 () => _container.Resolve<Meta<object, MyMetaWithInvalidConstructor>>());
 
             var typeName = typeof(MyMetaWithInvalidConstructor).Name;
-            var message = string.Format(MetadataViewProviderResources.InvalidViewImplementation, typeName);
+            var message = string.Format("MetadataViewProviderResources.InvalidViewImplementation", typeName);
 
             Assert.Equal(message, exception.Message);
         }

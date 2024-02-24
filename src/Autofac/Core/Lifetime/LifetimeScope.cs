@@ -285,7 +285,7 @@ namespace Autofac.Core.Lifetime
                 {
                     result = creator();
                     if (_sharedInstances.ContainsKey(id))
-                        throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, LifetimeScopeResources.SelfConstructingDependencyDetected, result.GetType().FullName));
+                        throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "LifetimeScopeResources.SelfConstructingDependencyDetected", result.GetType().FullName));
 
                     _sharedInstances.Add(id, result);
                 }
@@ -341,7 +341,7 @@ namespace Autofac.Core.Lifetime
         private void CheckNotDisposed()
         {
             if (IsDisposed)
-                throw new ObjectDisposedException(LifetimeScopeResources.ScopeIsDisposed, innerException: null);
+                throw new ObjectDisposedException("LifetimeScopeResources.ScopeIsDisposed", innerException: null);
         }
 
         /// <summary>

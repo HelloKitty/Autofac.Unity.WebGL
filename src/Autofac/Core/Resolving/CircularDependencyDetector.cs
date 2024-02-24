@@ -59,10 +59,10 @@ namespace Autofac.Core.Resolving
             if (activationStack == null) throw new ArgumentNullException(nameof(activationStack));
 
             if (callDepth > MaxResolveDepth)
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, CircularDependencyDetectorResources.MaxDepthExceeded, registration));
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "CircularDependencyDetectorResources.MaxDepthExceeded", registration));
 
             if (IsCircularDependency(registration, activationStack))
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, CircularDependencyDetectorResources.CircularDependency, CreateDependencyGraphTo(registration, activationStack)));
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "CircularDependencyDetectorResources.CircularDependency", CreateDependencyGraphTo(registration, activationStack)));
         }
 
         private static bool IsCircularDependency(IComponentRegistration registration, IEnumerable<InstanceLookup> activationStack)

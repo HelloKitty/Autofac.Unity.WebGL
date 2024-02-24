@@ -183,7 +183,7 @@ namespace Autofac
                 }
                 catch (DependencyResolutionException ex)
                 {
-                    throw new DependencyResolutionException(String.Format(CultureInfo.CurrentCulture, ContainerBuilderResources.ErrorAutoActivating, registration), ex);
+                    throw new DependencyResolutionException(String.Format(CultureInfo.CurrentCulture, "ContainerBuilderResources.ErrorAutoActivating", registration), ex);
                 }
                 finally
                 {
@@ -267,7 +267,7 @@ namespace Autofac
             if (componentRegistry == null) throw new ArgumentNullException(nameof(componentRegistry));
 
             if (_wasBuilt)
-                throw new InvalidOperationException(ContainerBuilderResources.BuildCanOnlyBeCalledOnce);
+                throw new InvalidOperationException("ContainerBuilderResources.BuildCanOnlyBeCalledOnce");
 
             _wasBuilt = true;
 

@@ -184,7 +184,7 @@ namespace Autofac.Builder
                 {
                     if (!ts.ServiceType.GetTypeInfo().IsAssignableFrom(limitType.GetTypeInfo()))
                     {
-                        throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, RegistrationBuilderResources.ComponentDoesNotSupportService, limitType, ts));
+                        throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "RegistrationBuilderResources.ComponentDoesNotSupportService", limitType, ts));
                     }
                 }
             }

@@ -91,7 +91,7 @@ namespace Autofac.Core.Lifetime
             }
 
             throw new DependencyResolutionException(string.Format(
-                CultureInfo.CurrentCulture, MatchingScopeLifetimeResources.MatchingScopeNotFound, string.Join(", ", this._tagsToMatch)));
+                CultureInfo.CurrentCulture, "MatchingScopeLifetimeResources.MatchingScopeNotFound", string.Join(", ", this._tagsToMatch)));
         }
     }
 }

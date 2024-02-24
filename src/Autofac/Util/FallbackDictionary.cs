@@ -193,7 +193,7 @@ namespace Autofac.Util
 
             if (this.Parent.ContainsKey(key))
             {
-                throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, FallbackDictionaryResources.DuplicateItem, key));
+                throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "FallbackDictionaryResources.DuplicateItem", key));
             }
 
             this._localValues.Add(key, value);

@@ -64,7 +64,7 @@ namespace Autofac.Core.Activators.ProvidedInstance
             if (parameters == null) throw new ArgumentNullException(nameof(parameters));
 
             if (_activated)
-                throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, ProvidedInstanceActivatorResources.InstanceAlreadyActivated, this._instance.GetType()));
+                throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, "ProvidedInstanceActivatorResources.InstanceAlreadyActivated", this._instance.GetType()));
 
             _activated = true;
 

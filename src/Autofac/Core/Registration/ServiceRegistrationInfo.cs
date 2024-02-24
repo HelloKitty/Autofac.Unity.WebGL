@@ -98,7 +98,7 @@ namespace Autofac.Core.Registration
         private void RequiresInitialization()
         {
             if (!IsInitialized)
-                throw new InvalidOperationException(ServiceRegistrationInfoResources.NotInitialized);
+                throw new InvalidOperationException("ServiceRegistrationInfoResources.NotInitialized");
         }
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Autofac.Core.Registration
         private void EnforceDuringInitialization()
         {
             if (!IsInitializing)
-                throw new InvalidOperationException(ServiceRegistrationInfoResources.NotDuringInitialization);
+                throw new InvalidOperationException("ServiceRegistrationInfoResources.NotDuringInitialization");
         }
 
         public IRegistrationSource DequeueNextSource()

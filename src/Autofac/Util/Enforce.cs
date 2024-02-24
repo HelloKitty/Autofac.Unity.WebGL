@@ -51,7 +51,7 @@ namespace Autofac.Util
             if (value == null) throw new ArgumentNullException(name);
 
             if (value.Any(e => e == null))
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, EnforceResources.ElementCannotBeNull, name));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "EnforceResources.ElementCannotBeNull", name));
 
             return value;
         }
@@ -66,7 +66,7 @@ namespace Autofac.Util
             where T : class
         {
             if (value == null)
-                throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture, EnforceResources.CannotBeNull, typeof(T).FullName));
+                throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture, "EnforceResources.CannotBeNull", typeof(T).FullName));
 
             return value;
         }
@@ -85,7 +85,7 @@ namespace Autofac.Util
             if (value == null) throw new ArgumentNullException(description);
 
             if (value.Length == 0)
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, EnforceResources.CannotBeEmpty, description));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "EnforceResources.CannotBeEmpty", description));
 
             return value;
         }
@@ -101,10 +101,10 @@ namespace Autofac.Util
             MethodInfo invoke = delegateType.GetTypeInfo().GetDeclaredMethod("Invoke");
 
             if (invoke == null)
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, EnforceResources.NotDelegate, delegateType));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "EnforceResources.NotDelegate", delegateType));
 
             if (invoke.ReturnType == typeof(void))
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, EnforceResources.DelegateReturnsVoid, delegateType));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "EnforceResources.DelegateReturnsVoid", delegateType));
         }
     }
 }

@@ -104,7 +104,7 @@ namespace Autofac
                 if (!(rb.RegistrationData.Lifetime is RootScopeLifetime) ||
                     rb.RegistrationData.Sharing != InstanceSharing.Shared)
                 {
-                    throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture, RegistrationExtensionsResources.InstanceRegistrationsAreSingleInstanceOnly, instance));
+                    throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture, "RegistrationExtensionsResources.InstanceRegistrationsAreSingleInstanceOnly", instance));
                 }
 
                 activator.DisposeInstance = rb.RegistrationData.Ownership == InstanceOwnership.OwnedByLifetimeScope;
@@ -452,9 +452,9 @@ namespace Autofac
                 var attrs = t.GetTypeInfo().GetCustomAttributes(true).OfType<TAttribute>().ToArray();
 
                 if (attrs.Length == 0)
-                    throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, RegistrationExtensionsResources.MetadataAttributeNotFound, typeof(TAttribute), t));
+                    throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "RegistrationExtensionsResources.MetadataAttributeNotFound", typeof(TAttribute), t));
                 if (attrs.Length != 1)
-                    throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, RegistrationExtensionsResources.MultipleMetadataAttributesSameType, typeof(TAttribute), t));
+                    throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "RegistrationExtensionsResources.MultipleMetadataAttributesSameType", typeof(TAttribute), t));
                 var attr = attrs[0];
                 return metadataProperties.Select(p => new KeyValuePair<string, object>(p.Name, p.GetValue(attr, null)));
             });
@@ -713,7 +713,7 @@ namespace Autofac
             // Unfortunately this could cause some false positives in rare AOP/dynamic subclassing
             // scenarios. If it becomes a problem we'll address it then.
             if (registration.ActivatorData.ImplementationType.GetMatchingConstructor(signature) == null)
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, RegistrationExtensionsResources.NoMatchingConstructorExists, registration.ActivatorData.ImplementationType));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "RegistrationExtensionsResources.NoMatchingConstructorExists", registration.ActivatorData.ImplementationType));
 
             return registration.UsingConstructor(new MatchingSignatureConstructorSelector(signature));
         }
@@ -1443,7 +1443,7 @@ namespace Autofac
             var c = registration.RegistrationData.DeferredCallback;
             if (c == null)
             {
-                throw new NotSupportedException(RegistrationExtensionsResources.OnlyIfRequiresCallbackContainer);
+                throw new NotSupportedException("RegistrationExtensionsResources.OnlyIfRequiresCallbackContainer");
             }
 
             var original = c.Callback;

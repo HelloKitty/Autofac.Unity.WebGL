@@ -72,7 +72,7 @@ namespace Autofac.Features.GeneratedFactories
 
         public override string ToString()
         {
-            return GeneratedFactoryRegistrationSourceResources.GeneratedFactoryRegistrationSourceDescription;
+            return "GeneratedFactoryRegistrationSourceResources.GeneratedFactoryRegistrationSourceDescription";
         }
     }
 }

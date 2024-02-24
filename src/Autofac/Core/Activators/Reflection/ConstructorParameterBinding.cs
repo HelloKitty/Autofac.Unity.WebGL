@@ -109,7 +109,7 @@ namespace Autofac.Core.Activators.Reflection
         public object Instantiate()
         {
             if (!CanInstantiate)
-                throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, ConstructorParameterBindingResources.CannotInstantitate, this.Description));
+                throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.CannotInstantitate", this.Description));
 
             var values = new object[_valueRetrievers.Length];
             for (var i = 0; i < _valueRetrievers.Length; ++i)
@@ -128,11 +128,11 @@ namespace Autofac.Core.Activators.Reflection
             }
             catch (TargetInvocationException ex)
             {
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, ConstructorParameterBindingResources.ExceptionDuringInstantiation, TargetConstructor, TargetConstructor.DeclaringType.Name), ex.InnerException);
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.ExceptionDuringInstantiation", TargetConstructor, TargetConstructor.DeclaringType.Name), ex.InnerException);
             }
             catch (Exception ex)
             {
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, ConstructorParameterBindingResources.ExceptionDuringInstantiation, TargetConstructor, TargetConstructor.DeclaringType.Name), ex);
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.ExceptionDuringInstantiation", TargetConstructor, TargetConstructor.DeclaringType.Name), ex);
             }
         }
 
@@ -140,8 +140,8 @@ namespace Autofac.Core.Activators.Reflection
         /// Gets a description of the constructor parameter binding.
         /// </summary>
         public string Description => CanInstantiate
-            ? string.Format(CultureInfo.CurrentCulture, ConstructorParameterBindingResources.BoundConstructor, _ci)
-            : string.Format(CultureInfo.CurrentCulture, ConstructorParameterBindingResources.NonBindableConstructor, _ci, _firstNonBindableParameter);
+            ? string.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.BoundConstructor", _ci)
+            : string.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.NonBindableConstructor", _ci, _firstNonBindableParameter);
 
         /// <summary>Returns a System.String that represents the current System.Object.</summary>
         /// <returns>A System.String that represents the current System.Object.</returns>

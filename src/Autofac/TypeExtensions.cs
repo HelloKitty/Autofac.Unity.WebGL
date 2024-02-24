@@ -80,7 +80,7 @@ namespace Autofac
             if (openGeneric == null) throw new ArgumentNullException(nameof(openGeneric));
 
             if (!(openGeneric.GetTypeInfo().IsGenericTypeDefinition || openGeneric.GetTypeInfo().ContainsGenericParameters))
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, TypeExtensionsResources.NotOpenGenericType, openGeneric.FullName));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "TypeExtensionsResources.NotOpenGenericType", openGeneric.FullName));
 
             return @this.GetTypesThatClose(openGeneric).Any();
         }

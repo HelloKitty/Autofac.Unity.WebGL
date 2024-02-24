@@ -64,15 +64,15 @@ namespace Autofac.Core.Activators.Reflection
                 return result[0];
 
             if (!constructorBindings.Any())
-                throw new ArgumentException(MatchingSignatureConstructorSelectorResources.AtLeastOneBindingRequired);
+                throw new ArgumentException("MatchingSignatureConstructorSelectorResources.AtLeastOneBindingRequired");
 
             var targetTypeName = constructorBindings.First().TargetConstructor.DeclaringType.Name;
             var signature = string.Join(", ", _signature.Select(t => t.Name).ToArray());
 
             if (result.Length == 0)
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, MatchingSignatureConstructorSelectorResources.RequiredConstructorNotAvailable, targetTypeName, signature));
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "MatchingSignatureConstructorSelectorResources.RequiredConstructorNotAvailable", targetTypeName, signature));
 
-            throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, MatchingSignatureConstructorSelectorResources.TooManyConstructorsMatch, signature));
+            throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "MatchingSignatureConstructorSelectorResources.TooManyConstructorsMatch", signature));
         }
     }
 }

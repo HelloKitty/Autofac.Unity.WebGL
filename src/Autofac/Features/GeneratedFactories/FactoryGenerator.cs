@@ -149,7 +149,7 @@ namespace Autofac.Features.GeneratedFactories
                 {
                     // There are duplicate input types - that's a problem. Throw
                     // when the function is invoked.
-                    var message = String.Format(CultureInfo.CurrentCulture, GeneratedFactoryRegistrationSourceResources.DuplicateTypesInTypeMappedFuncParameterList, returnType.AssemblyQualifiedName, String.Join(", ", arguments.Cast<object>().ToArray()));
+                    var message = String.Format(CultureInfo.CurrentCulture, "GeneratedFactoryRegistrationSourceResources.DuplicateTypesInTypeMappedFuncParameterList", returnType.AssemblyQualifiedName, String.Join(", ", arguments.Cast<object>().ToArray()));
                     resolveCast = Expression.Throw(Expression.Constant(new DependencyResolutionException(message)), invoke.ReturnType);
                 }
             }

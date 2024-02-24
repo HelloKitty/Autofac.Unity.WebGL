@@ -46,7 +46,7 @@ namespace Autofac.Features.OpenGenerics
         {
             if (fromService == null) throw new ArgumentNullException(nameof(fromService));
             if (!fromService.ServiceType.GetTypeInfo().IsGenericTypeDefinition)
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, OpenGenericDecoratorActivatorDataResources.DecoratedServiceIsNotOpenGeneric, fromService));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "OpenGenericDecoratorActivatorDataResources.DecoratedServiceIsNotOpenGeneric", fromService));
 
             FromService = fromService;
         }

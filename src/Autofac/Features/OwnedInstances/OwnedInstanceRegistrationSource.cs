@@ -88,7 +88,7 @@ namespace Autofac.Features.OwnedInstances
 
         public override string ToString()
         {
-            return OwnedInstanceRegistrationSourceResources.OwnedInstanceRegistrationSourceDescription;
+            return "OwnedInstanceRegistrationSourceResources.OwnedInstanceRegistrationSourceDescription";
         }
     }
 }

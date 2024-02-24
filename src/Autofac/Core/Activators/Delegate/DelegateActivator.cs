@@ -69,7 +69,7 @@ namespace Autofac.Core.Activators.Delegate
             var result = _activationFunction(context, parameters);
             if (result == null)
             {
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, DelegateActivatorResources.NullFromActivationDelegateFor, LimitType));
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "DelegateActivatorResources.NullFromActivationDelegateFor", LimitType));
             }
 
             return result;

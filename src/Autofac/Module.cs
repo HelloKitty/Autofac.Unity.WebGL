@@ -153,7 +153,7 @@ namespace Autofac
                 var thisType = GetType();
                 var baseType = thisType.GetTypeInfo().BaseType;
                 if (baseType != typeof(Module))
-                    throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture, ModuleResources.ThisAssemblyUnavailable, thisType, baseType));
+                    throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture, "ModuleResources.ThisAssemblyUnavailable", thisType, baseType));
 
                 return thisType.GetTypeInfo().Assembly;
             }

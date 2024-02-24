@@ -72,7 +72,7 @@ namespace Autofac.Features.Metadata
 
         public override string ToString()
         {
-            return MetaRegistrationSourceResources.StronglyTypedMetaRegistrationSourceDescription;
+            return "MetaRegistrationSourceResources.StronglyTypedMetaRegistrationSourceDescription";
         }
 
         private static IComponentRegistration CreateMetaRegistration<T, TMetadata>(Service providedService, IComponentRegistration valueRegistration)

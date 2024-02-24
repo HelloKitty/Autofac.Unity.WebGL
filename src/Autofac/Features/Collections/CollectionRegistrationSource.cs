@@ -131,7 +131,7 @@ namespace Autofac.Features.Collections
 
         public override string ToString()
         {
-            return CollectionRegistrationSourceResources.CollectionRegistrationSourceDescription;
+            return "CollectionRegistrationSourceResources.CollectionRegistrationSourceDescription";
         }
     }
 }

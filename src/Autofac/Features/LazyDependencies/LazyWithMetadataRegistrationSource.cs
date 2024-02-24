@@ -82,7 +82,7 @@ namespace Autofac.Features.LazyDependencies
 
         public override string ToString()
         {
-            return LazyWithMetadataRegistrationSourceResources.LazyWithMetadataRegistrationSourceDescription;
+            return "LazyWithMetadataRegistrationSourceResources.LazyWithMetadataRegistrationSourceDescription";
         }
 
         private static IComponentRegistration CreateLazyRegistration<T, TMeta>(Service providedService, IComponentRegistration valueRegistration)

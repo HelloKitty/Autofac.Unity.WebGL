@@ -48,7 +48,7 @@ namespace Autofac.Features.OpenGenerics
             OpenGenericServiceBinder.EnforceBindable(activatorData.ImplementationType, registrationData.Services);
 
             if (registrationData.Services.Contains((Service)activatorData.FromService))
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, OpenGenericDecoratorRegistrationSourceResources.FromAndToMustDiffer, activatorData.FromService));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "OpenGenericDecoratorRegistrationSourceResources.FromAndToMustDiffer", activatorData.FromService));
 
             _registrationData = registrationData;
             _activatorData = activatorData;
@@ -92,7 +92,7 @@ namespace Autofac.Features.OpenGenerics
         {
             return string.Format(
                 CultureInfo.CurrentCulture,
-                OpenGenericDecoratorRegistrationSourceResources.OpenGenericDecoratorRegistrationSourceImplFromTo,
+                "OpenGenericDecoratorRegistrationSourceResources.OpenGenericDecoratorRegistrationSourceImplFromTo",
                 _activatorData.ImplementationType.FullName,
                 ((Service)_activatorData.FromService).Description,
                 string.Join(", ", _registrationData.Services.Select(s => s.Description).ToArray()));

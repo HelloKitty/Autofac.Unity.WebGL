@@ -73,7 +73,7 @@ namespace Autofac.Util
             {
                 throw new ArgumentException(string.Format(
                     CultureInfo.CurrentCulture,
-                    ReflectionExtensionsResources.ExpressionNotPropertyAccessor,
+                    "ReflectionExtensionsResources.ExpressionNotPropertyAccessor",
                     propertyAccessor));
             }
 
@@ -97,7 +97,7 @@ namespace Autofac.Util
             {
                 throw new ArgumentException(string.Format(
                     CultureInfo.CurrentCulture,
-                    ReflectionExtensionsResources.ExpressionNotMethodCall,
+                    "ReflectionExtensionsResources.ExpressionNotMethodCall",
                     methodCallExpression));
             }
 
@@ -120,7 +120,7 @@ namespace Autofac.Util
             {
                 throw new ArgumentException(string.Format(
                     CultureInfo.CurrentCulture,
-                    ReflectionExtensionsResources.ExpressionNotConstructorCall,
+                    "ReflectionExtensionsResources.ExpressionNotConstructorCall",
                     constructorCallExpression));
             }
 

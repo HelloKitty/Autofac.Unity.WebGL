@@ -83,7 +83,7 @@ namespace Autofac.Core
         [SuppressMessage("Microsoft.Design", "CA1065:DoNotRaiseExceptionsInUnexpectedLocations", Justification = "This is an attempt to make Equals 'abstract' when it normally isn't.")]
         public override bool Equals(object obj)
         {
-            throw new NotImplementedException(ServiceResources.MustOverrideEquals);
+            throw new NotImplementedException("ServiceResources.MustOverrideEquals");
         }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace Autofac.Core
         [SuppressMessage("Microsoft.Design", "CA1065:DoNotRaiseExceptionsInUnexpectedLocations", Justification = "This is an attempt to make GetHashCode 'abstract' when it normally isn't.")]
         public override int GetHashCode()
         {
-            throw new NotImplementedException(ServiceResources.MustOverrideGetHashCode);
+            throw new NotImplementedException("ServiceResources.MustOverrideGetHashCode");
         }
     }
 }

@@ -110,7 +110,7 @@ namespace Autofac.Features.OpenGenerics
             }
             catch (InvalidOperationException)
             {
-                var message = string.Format(CultureInfo.CurrentCulture, OpenGenericServiceBinderResources.ImplementorDoesntImplementService, implementationType.FullName, serviceType.FullName);
+                var message = string.Format(CultureInfo.CurrentCulture, "OpenGenericServiceBinderResources.ImplementorDoesntImplementService", implementationType.FullName, serviceType.FullName);
                 throw new InvalidOperationException(message);
             }
         }
@@ -141,7 +141,7 @@ namespace Autofac.Features.OpenGenerics
             if (!implementationType.GetTypeInfo().IsGenericTypeDefinition)
             {
                 throw new ArgumentException(
-                    string.Format(CultureInfo.CurrentCulture, OpenGenericServiceBinderResources.ImplementorMustBeOpenGenericTypeDefinition, implementationType));
+                    string.Format(CultureInfo.CurrentCulture, "OpenGenericServiceBinderResources.ImplementorMustBeOpenGenericTypeDefinition", implementationType));
             }
 
             foreach (var service in services.OfType<IServiceWithType>())
@@ -149,18 +149,18 @@ namespace Autofac.Features.OpenGenerics
                 if (!service.ServiceType.GetTypeInfo().IsGenericTypeDefinition)
                 {
                     throw new ArgumentException(
-                        string.Format(CultureInfo.CurrentCulture, OpenGenericServiceBinderResources.ServiceTypeMustBeOpenGenericTypeDefinition, service));
+                        string.Format(CultureInfo.CurrentCulture, "OpenGenericServiceBinderResources.ServiceTypeMustBeOpenGenericTypeDefinition", service));
                 }
 
                 if (service.ServiceType.GetTypeInfo().IsInterface)
                 {
                     if (GetInterface(implementationType, service.ServiceType) == null)
-                        throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, OpenGenericServiceBinderResources.InterfaceIsNotImplemented, implementationType, service));
+                        throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "OpenGenericServiceBinderResources.InterfaceIsNotImplemented", implementationType, service));
                 }
                 else
                 {
                     if (!Traverse.Across(implementationType, t => t.GetTypeInfo().BaseType).Any(t => IsCompatibleGenericClassDefinition(t, service.ServiceType)))
-                        throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, OpenGenericServiceBinderResources.TypesAreNotConvertible, implementationType, service));
+                        throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "OpenGenericServiceBinderResources.TypesAreNotConvertible", implementationType, service));
                 }
             }
         }

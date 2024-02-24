@@ -63,7 +63,7 @@ namespace Autofac.Core.Activators.Reflection
 
             throw new DependencyResolutionException(string.Format(
                 CultureInfo.CurrentCulture,
-                MostParametersConstructorSelectorResources.UnableToChooseFromMultipleConstructors,
+                "MostParametersConstructorSelectorResources.UnableToChooseFromMultipleConstructors",
                 maxLength,
                 maximal[0].TargetConstructor.DeclaringType));
         }

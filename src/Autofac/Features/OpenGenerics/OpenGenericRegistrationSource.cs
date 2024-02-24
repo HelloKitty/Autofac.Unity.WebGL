@@ -77,7 +77,7 @@ namespace Autofac.Features.OpenGenerics
         {
             return string.Format(
                 CultureInfo.CurrentCulture,
-                OpenGenericRegistrationSourceResources.OpenGenericRegistrationSourceDescription,
+                "OpenGenericRegistrationSourceResources.OpenGenericRegistrationSourceDescription",
                 _activatorData.ImplementationType.FullName,
                 string.Join(", ", _registrationData.Services.Select(s => s.Description).ToArray()));
         }

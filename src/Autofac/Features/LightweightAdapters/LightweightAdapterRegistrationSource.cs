@@ -48,7 +48,7 @@ namespace Autofac.Features.LightweightAdapters
             _activatorData = activatorData;
 
             if (registrationData.Services.Contains(activatorData.FromService))
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, LightweightAdapterRegistrationSourceResources.FromAndToMustDiffer, activatorData.FromService));
+                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture, "LightweightAdapterRegistrationSourceResources.FromAndToMustDiffer", activatorData.FromService));
         }
 
         public IEnumerable<IComponentRegistration> RegistrationsFor(Service service, Func<Service, IEnumerable<IComponentRegistration>> registrationAccessor)
@@ -111,7 +111,7 @@ namespace Autofac.Features.LightweightAdapters
         {
             return string.Format(
                 CultureInfo.CurrentCulture,
-                LightweightAdapterRegistrationSourceResources.AdapterFromToDescription,
+                "LightweightAdapterRegistrationSourceResources.AdapterFromToDescription",
                 _activatorData.FromService.Description,
                 string.Join(", ", _registrationData.Services.Select(s => s.Description).ToArray()));
         }

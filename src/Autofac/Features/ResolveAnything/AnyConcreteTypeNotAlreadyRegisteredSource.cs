@@ -132,7 +132,7 @@ namespace Autofac.Features.ResolveAnything
         /// <filterpriority>2</filterpriority>
         public override string ToString()
         {
-            return AnyConcreteTypeNotAlreadyRegisteredSourceResources.AnyConcreteTypeNotAlreadyRegisteredSourceDescription;
+            return "AnyConcreteTypeNotAlreadyRegisteredSourceResources.AnyConcreteTypeNotAlreadyRegisteredSourceDescription";
         }
     }
 }

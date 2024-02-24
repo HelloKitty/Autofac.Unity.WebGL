@@ -65,7 +65,7 @@ namespace Autofac.Features.LazyDependencies
 
         public override string ToString()
         {
-            return LazyRegistrationSourceResources.LazyRegistrationSourceDescription;
+            return "LazyRegistrationSourceResources.LazyRegistrationSourceDescription";
         }
 
         private static IComponentRegistration CreateLazyRegistration<T>(Service providedService, IComponentRegistration valueRegistration)

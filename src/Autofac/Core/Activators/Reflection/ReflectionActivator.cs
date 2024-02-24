@@ -101,7 +101,7 @@ namespace Autofac.Core.Activators.Reflection
             if (parameters == null) throw new ArgumentNullException(nameof(parameters));
 
             if (_availableConstructors.Length == 0)
-                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, ReflectionActivatorResources.NoConstructorsAvailable, _implementationType, ConstructorFinder));
+                throw new DependencyResolutionException(string.Format(CultureInfo.CurrentCulture, "ReflectionActivatorResources.NoConstructorsAvailable", _implementationType, ConstructorFinder));
 
             var validBindings = GetValidConstructorBindings(context, parameters);
 
@@ -160,7 +160,7 @@ namespace Autofac.Core.Activators.Reflection
 
             return string.Format(
                 CultureInfo.CurrentCulture,
-                ReflectionActivatorResources.NoConstructorsBindable,
+                "ReflectionActivatorResources.NoConstructorsBindable",
                 ConstructorFinder,
                 _implementationType,
                 reasons);
