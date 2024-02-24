@@ -140,8 +140,8 @@ namespace Autofac.Core.Activators.Reflection
         /// Gets a description of the constructor parameter binding.
         /// </summary>
         public string Description => CanInstantiate
-            ? string.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.BoundConstructor", _ci)
-            : string.Format(CultureInfo.CurrentCulture, "ConstructorParameterBindingResources.NonBindableConstructor", _ci, _firstNonBindableParameter);
+            ? string.Format(CultureInfo.CurrentCulture, "Bound constructor '{0}'", _ci)
+            : string.Format(CultureInfo.CurrentCulture, "Cannot resolve parameter '{1}' of constructor '{0}'", _ci, _firstNonBindableParameter);
 
         /// <summary>Returns a System.String that represents the current System.Object.</summary>
         /// <returns>A System.String that represents the current System.Object.</returns>
