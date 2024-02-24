@@ -75,7 +75,7 @@ namespace Autofac.Core
                     return message;
 
                 var inner = InnerException.Message;
-                message = string.Format(CultureInfo.CurrentCulture, DependencyResolutionExceptionResources.MessageNestingFormat, message, inner);
+                message = string.Format(CultureInfo.CurrentCulture, "{0} ---&gt; {1} (See inner exception for details.)", message, inner);
                 return message;
             }
         }
