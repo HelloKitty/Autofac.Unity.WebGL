@@ -63,7 +63,7 @@ namespace Autofac.Core.Resolving
                     services.AppendLine(s.Description);
                 }
 
-                var message = String.Format(CultureInfo.CurrentCulture, ComponentActivationResources.UnableToLocateLifetimeScope, registration.Activator.LimitType, services);
+                var message = String.Format(CultureInfo.CurrentCulture, "ComponentActivationResources.UnableToLocateLifetimeScope", registration.Activator.LimitType, services);
                 throw new DependencyResolutionException(message, ex);
             }
         }
@@ -71,7 +71,7 @@ namespace Autofac.Core.Resolving
         public object Execute()
         {
             if (_executed)
-                throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, ComponentActivationResources.ActivationAlreadyExecuted, this.ComponentRegistration));
+                throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, "ComponentActivationResources.ActivationAlreadyExecuted", this.ComponentRegistration));
 
             _executed = true;
 
@@ -97,7 +97,7 @@ namespace Autofac.Core.Resolving
             }
             catch (Exception ex)
             {
-                throw new DependencyResolutionException(String.Format(CultureInfo.CurrentCulture, ComponentActivationResources.ErrorDuringActivation, this.ComponentRegistration), ex);
+                throw new DependencyResolutionException(String.Format(CultureInfo.CurrentCulture, "ComponentActivationResources.ErrorDuringActivation", this.ComponentRegistration), ex);
             }
 
             if (ComponentRegistration.Ownership == InstanceOwnership.OwnedByLifetimeScope)
