@@ -160,7 +160,7 @@ namespace Autofac.Core.Activators.Reflection
 
             return string.Format(
                 CultureInfo.CurrentCulture,
-                "ReflectionActivatorResources.NoConstructorsBindable",
+                "None of the constructors found with '{0}' on type '{1}' can be invoked with the available services and parameters:{2}",
                 ConstructorFinder,
                 _implementationType,
                 reasons);
