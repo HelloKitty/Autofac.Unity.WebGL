@@ -90,7 +90,7 @@ namespace Autofac.Core.Resolving
             catch (Exception exception)
             {
                 End(exception);
-                throw new DependencyResolutionException(ResolveOperationResources.ExceptionDuringResolve, exception);
+                throw new DependencyResolutionException("An exception was thrown while executing a resolve operation. See the InnerException for details.", exception);
             }
 
             End();
@@ -108,7 +108,7 @@ namespace Autofac.Core.Resolving
         /// <exception cref="ArgumentNullException"/>
         public object GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable<Parameter> parameters)
         {
-            if (_ended) throw new ObjectDisposedException(ResolveOperationResources.TemporaryContextDisposed, innerException: null);
+            if (_ended) throw new ObjectDisposedException("This resolve operation has already ended. When registering components using lambdas, the IComponentContext 'c' parameter to the lambda cannot be stored. Instead, either resolve IComponentContext again from 'c', or resolve a Func&lt;&gt; based factory to create subsequent components from.", innerException: null);
 
             CircularDependencyDetector.CheckForCircularDependency(registration, _activationStack, ++_callDepth);
 
