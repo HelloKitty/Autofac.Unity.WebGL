@@ -66,7 +66,7 @@ namespace Autofac.Features.Metadata {
         /// </summary>
         internal static string MetaRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("MetaRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("MetaRegistrationSourceDescription", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Features.Metadata {
         /// </summary>
         internal static string StronglyTypedMetaRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("StronglyTypedMetaRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("StronglyTypedMetaRegistrationSourceDescription", resourceCulture);
             }
         }
     }

@@ -67,7 +67,7 @@ namespace Autofac.Features.ResolveAnything {
         /// </summary>
         internal static string AnyConcreteTypeNotAlreadyRegisteredSourceDescription {
             get {
-                return ResourceManager.GetString("AnyConcreteTypeNotAlreadyRegisteredSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("AnyConcreteTypeNotAlreadyRegisteredSourceDescription", resourceCulture);
             }
         }
     }

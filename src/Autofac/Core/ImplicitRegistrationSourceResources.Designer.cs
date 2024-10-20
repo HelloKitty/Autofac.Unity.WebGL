@@ -65,7 +65,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string GenericTypeMustBeUnary {
             get {
-                return ResourceManager.GetString("GenericTypeMustBeUnary", resourceCulture);
+                return StubbedResourceManager.GetString("GenericTypeMustBeUnary", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string TypeMustBeGeneric {
             get {
-                return ResourceManager.GetString("TypeMustBeGeneric", resourceCulture);
+                return StubbedResourceManager.GetString("TypeMustBeGeneric", resourceCulture);
             }
         }
     }

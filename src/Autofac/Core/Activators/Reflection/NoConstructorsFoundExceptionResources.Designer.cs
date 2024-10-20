@@ -66,7 +66,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string Message {
             get {
-                return ResourceManager.GetString("Message", resourceCulture);
+                return StubbedResourceManager.GetString("Message", resourceCulture);
             }
         }
     }

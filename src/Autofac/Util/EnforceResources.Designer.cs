@@ -66,7 +66,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string CannotBeEmpty {
             get {
-                return ResourceManager.GetString("CannotBeEmpty", resourceCulture);
+                return StubbedResourceManager.GetString("CannotBeEmpty", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string CannotBeNull {
             get {
-                return ResourceManager.GetString("CannotBeNull", resourceCulture);
+                return StubbedResourceManager.GetString("CannotBeNull", resourceCulture);
             }
         }
         
@@ -84,7 +84,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string DelegateReturnsVoid {
             get {
-                return ResourceManager.GetString("DelegateReturnsVoid", resourceCulture);
+                return StubbedResourceManager.GetString("DelegateReturnsVoid", resourceCulture);
             }
         }
         
@@ -93,7 +93,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string ElementCannotBeNull {
             get {
-                return ResourceManager.GetString("ElementCannotBeNull", resourceCulture);
+                return StubbedResourceManager.GetString("ElementCannotBeNull", resourceCulture);
             }
         }
         
@@ -102,7 +102,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string NotDelegate {
             get {
-                return ResourceManager.GetString("NotDelegate", resourceCulture);
+                return StubbedResourceManager.GetString("NotDelegate", resourceCulture);
             }
         }
     }

@@ -65,7 +65,7 @@ namespace Autofac {
         /// </summary>
         internal static string MemberNotFound {
             get {
-                return ResourceManager.GetString("MemberNotFound", resourceCulture);
+                return StubbedResourceManager.GetString("MemberNotFound", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac {
         /// </summary>
         internal static string NotOpenGenericType {
             get {
-                return ResourceManager.GetString("NotOpenGenericType", resourceCulture);
+                return StubbedResourceManager.GetString("NotOpenGenericType", resourceCulture);
             }
         }
     }

@@ -65,7 +65,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string ExceptionDuringResolve {
             get {
-                return ResourceManager.GetString("ExceptionDuringResolve", resourceCulture);
+                return StubbedResourceManager.GetString("ExceptionDuringResolve", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string MaxDepthExceeded {
             get {
-                return ResourceManager.GetString("MaxDepthExceeded", resourceCulture);
+                return StubbedResourceManager.GetString("MaxDepthExceeded", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string PipelineCompletedWithNoInstance {
             get {
-                return ResourceManager.GetString("PipelineCompletedWithNoInstance", resourceCulture);
+                return StubbedResourceManager.GetString("PipelineCompletedWithNoInstance", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string TemporaryContextDisposed {
             get {
-                return ResourceManager.GetString("TemporaryContextDisposed", resourceCulture);
+                return StubbedResourceManager.GetString("TemporaryContextDisposed", resourceCulture);
             }
         }
     }

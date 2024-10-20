@@ -66,7 +66,7 @@ namespace Autofac.Features.OwnedInstances {
         /// </summary>
         internal static string OwnedInstanceRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("OwnedInstanceRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("OwnedInstanceRegistrationSourceDescription", resourceCulture);
             }
         }
     }

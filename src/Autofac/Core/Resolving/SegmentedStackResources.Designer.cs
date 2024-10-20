@@ -65,7 +65,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string CannotExitSegmentWithRemainingItems {
             get {
-                return ResourceManager.GetString("CannotExitSegmentWithRemainingItems", resourceCulture);
+                return StubbedResourceManager.GetString("CannotExitSegmentWithRemainingItems", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string CurrentStackSegmentEmpty {
             get {
-                return ResourceManager.GetString("CurrentStackSegmentEmpty", resourceCulture);
+                return StubbedResourceManager.GetString("CurrentStackSegmentEmpty", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string EnumeratorNotValid {
             get {
-                return ResourceManager.GetString("EnumeratorNotValid", resourceCulture);
+                return StubbedResourceManager.GetString("EnumeratorNotValid", resourceCulture);
             }
         }
     }

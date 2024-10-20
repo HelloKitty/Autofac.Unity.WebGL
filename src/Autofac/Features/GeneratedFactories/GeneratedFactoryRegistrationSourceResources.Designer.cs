@@ -66,7 +66,7 @@ namespace Autofac.Features.GeneratedFactories {
         /// </summary>
         internal static string DuplicateTypesInTypeMappedFuncParameterList {
             get {
-                return ResourceManager.GetString("DuplicateTypesInTypeMappedFuncParameterList", resourceCulture);
+                return StubbedResourceManager.GetString("DuplicateTypesInTypeMappedFuncParameterList", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Features.GeneratedFactories {
         /// </summary>
         internal static string GeneratedFactoryRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("GeneratedFactoryRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("GeneratedFactoryRegistrationSourceDescription", resourceCulture);
             }
         }
     }

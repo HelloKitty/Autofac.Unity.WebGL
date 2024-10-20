@@ -65,7 +65,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string ImplementorDoesntImplementService {
             get {
-                return ResourceManager.GetString("ImplementorDoesntImplementService", resourceCulture);
+                return StubbedResourceManager.GetString("ImplementorDoesntImplementService", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string ImplementorMustBeOpenGenericTypeDefinition {
             get {
-                return ResourceManager.GetString("ImplementorMustBeOpenGenericTypeDefinition", resourceCulture);
+                return StubbedResourceManager.GetString("ImplementorMustBeOpenGenericTypeDefinition", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string ServiceTypeMustBeOpenGenericTypeDefinition {
             get {
-                return ResourceManager.GetString("ServiceTypeMustBeOpenGenericTypeDefinition", resourceCulture);
+                return StubbedResourceManager.GetString("ServiceTypeMustBeOpenGenericTypeDefinition", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string TypesAreNotConvertible {
             get {
-                return ResourceManager.GetString("TypesAreNotConvertible", resourceCulture);
+                return StubbedResourceManager.GetString("TypesAreNotConvertible", resourceCulture);
             }
         }
     }

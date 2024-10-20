@@ -65,7 +65,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string ComponentPipelineHasNotBeenBuilt {
             get {
-                return ResourceManager.GetString("ComponentPipelineHasNotBeenBuilt", resourceCulture);
+                return StubbedResourceManager.GetString("ComponentPipelineHasNotBeenBuilt", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string PipelineNotBuilt {
             get {
-                return ResourceManager.GetString("PipelineNotBuilt", resourceCulture);
+                return StubbedResourceManager.GetString("PipelineNotBuilt", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string ToStringFormat {
             get {
-                return ResourceManager.GetString("ToStringFormat", resourceCulture);
+                return StubbedResourceManager.GetString("ToStringFormat", resourceCulture);
             }
         }
     }

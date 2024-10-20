@@ -66,7 +66,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string CannotAddToDisposedDisposer {
             get {
-                return ResourceManager.GetString("CannotAddToDisposedDisposer", resourceCulture);
+                return StubbedResourceManager.GetString("CannotAddToDisposedDisposer", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string TypeOnlyImplementsIAsyncDisposable {
             get {
-                return ResourceManager.GetString("TypeOnlyImplementsIAsyncDisposable", resourceCulture);
+                return StubbedResourceManager.GetString("TypeOnlyImplementsIAsyncDisposable", resourceCulture);
             }
         }
     }

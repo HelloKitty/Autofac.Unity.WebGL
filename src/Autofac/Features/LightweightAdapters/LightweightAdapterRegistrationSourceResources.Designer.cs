@@ -67,7 +67,7 @@ namespace Autofac.Features.LightweightAdapters {
         /// </summary>
         internal static string AdapterFromToDescription {
             get {
-                return ResourceManager.GetString("AdapterFromToDescription", resourceCulture);
+                return StubbedResourceManager.GetString("AdapterFromToDescription", resourceCulture);
             }
         }
         
@@ -76,7 +76,7 @@ namespace Autofac.Features.LightweightAdapters {
         /// </summary>
         internal static string FromAndToMustDiffer {
             get {
-                return ResourceManager.GetString("FromAndToMustDiffer", resourceCulture);
+                return StubbedResourceManager.GetString("FromAndToMustDiffer", resourceCulture);
             }
         }
     }

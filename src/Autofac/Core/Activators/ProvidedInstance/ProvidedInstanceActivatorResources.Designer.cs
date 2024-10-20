@@ -66,7 +66,7 @@ namespace Autofac.Core.Activators.ProvidedInstance {
         /// </summary>
         internal static string InstanceAlreadyActivated {
             get {
-                return ResourceManager.GetString("InstanceAlreadyActivated", resourceCulture);
+                return StubbedResourceManager.GetString("InstanceAlreadyActivated", resourceCulture);
             }
         }
     }

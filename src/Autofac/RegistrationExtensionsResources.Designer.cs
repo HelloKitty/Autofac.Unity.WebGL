@@ -65,7 +65,7 @@ namespace Autofac {
         /// </summary>
         internal static string CompositesCannotProvideMultipleServices {
             get {
-                return ResourceManager.GetString("CompositesCannotProvideMultipleServices", resourceCulture);
+                return StubbedResourceManager.GetString("CompositesCannotProvideMultipleServices", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac {
         /// </summary>
         internal static string DecoratorRequiresInstanceParameter {
             get {
-                return ResourceManager.GetString("DecoratorRequiresInstanceParameter", resourceCulture);
+                return StubbedResourceManager.GetString("DecoratorRequiresInstanceParameter", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac {
         /// </summary>
         internal static string ExpressionDoesNotReferToProperty {
             get {
-                return ResourceManager.GetString("ExpressionDoesNotReferToProperty", resourceCulture);
+                return StubbedResourceManager.GetString("ExpressionDoesNotReferToProperty", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace Autofac {
         /// </summary>
         internal static string InstanceRegistrationsAreSingleInstanceOnly {
             get {
-                return ResourceManager.GetString("InstanceRegistrationsAreSingleInstanceOnly", resourceCulture);
+                return StubbedResourceManager.GetString("InstanceRegistrationsAreSingleInstanceOnly", resourceCulture);
             }
         }
         
@@ -101,7 +101,7 @@ namespace Autofac {
         /// </summary>
         internal static string MetadataAttributeNotFound {
             get {
-                return ResourceManager.GetString("MetadataAttributeNotFound", resourceCulture);
+                return StubbedResourceManager.GetString("MetadataAttributeNotFound", resourceCulture);
             }
         }
         
@@ -110,7 +110,7 @@ namespace Autofac {
         /// </summary>
         internal static string MultipleMetadataAttributesSameType {
             get {
-                return ResourceManager.GetString("MultipleMetadataAttributesSameType", resourceCulture);
+                return StubbedResourceManager.GetString("MultipleMetadataAttributesSameType", resourceCulture);
             }
         }
         
@@ -119,7 +119,7 @@ namespace Autofac {
         /// </summary>
         internal static string NoMatchingConstructorExists {
             get {
-                return ResourceManager.GetString("NoMatchingConstructorExists", resourceCulture);
+                return StubbedResourceManager.GetString("NoMatchingConstructorExists", resourceCulture);
             }
         }
         
@@ -128,7 +128,7 @@ namespace Autofac {
         /// </summary>
         internal static string OnlyIfRequiresCallbackContainer {
             get {
-                return ResourceManager.GetString("OnlyIfRequiresCallbackContainer", resourceCulture);
+                return StubbedResourceManager.GetString("OnlyIfRequiresCallbackContainer", resourceCulture);
             }
         }
     }

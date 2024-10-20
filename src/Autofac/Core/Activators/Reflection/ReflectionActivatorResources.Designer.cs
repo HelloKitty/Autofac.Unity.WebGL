@@ -65,7 +65,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string ConstructorSelectorCannotSelectAnInvalidBinding {
             get {
-                return ResourceManager.GetString("ConstructorSelectorCannotSelectAnInvalidBinding", resourceCulture);
+                return StubbedResourceManager.GetString("ConstructorSelectorCannotSelectAnInvalidBinding", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string NoConstructorsAvailable {
             get {
-                return ResourceManager.GetString("NoConstructorsAvailable", resourceCulture);
+                return StubbedResourceManager.GetString("NoConstructorsAvailable", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string NoConstructorsBindable {
             get {
-                return ResourceManager.GetString("NoConstructorsBindable", resourceCulture);
+                return StubbedResourceManager.GetString("NoConstructorsBindable", resourceCulture);
             }
         }
     }

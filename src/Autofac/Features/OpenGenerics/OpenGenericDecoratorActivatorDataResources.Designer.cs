@@ -66,7 +66,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string DecoratedServiceIsNotOpenGeneric {
             get {
-                return ResourceManager.GetString("DecoratedServiceIsNotOpenGeneric", resourceCulture);
+                return StubbedResourceManager.GetString("DecoratedServiceIsNotOpenGeneric", resourceCulture);
             }
         }
     }

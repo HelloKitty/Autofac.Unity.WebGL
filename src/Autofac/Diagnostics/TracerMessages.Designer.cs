@@ -65,7 +65,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ComponentDisplay {
             get {
-                return ResourceManager.GetString("ComponentDisplay", resourceCulture);
+                return StubbedResourceManager.GetString("ComponentDisplay", resourceCulture);
             }
         }
 
@@ -74,7 +74,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string EnterMiddleware {
             get {
-                return ResourceManager.GetString("EnterMiddleware", resourceCulture);
+                return StubbedResourceManager.GetString("EnterMiddleware", resourceCulture);
             }
         }
 
@@ -83,7 +83,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string EntryBrace {
             get {
-                return ResourceManager.GetString("EntryBrace", resourceCulture);
+                return StubbedResourceManager.GetString("EntryBrace", resourceCulture);
             }
         }
 
@@ -92,7 +92,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ExceptionDisplay {
             get {
-                return ResourceManager.GetString("ExceptionDisplay", resourceCulture);
+                return StubbedResourceManager.GetString("ExceptionDisplay", resourceCulture);
             }
         }
 
@@ -101,7 +101,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ExitBrace {
             get {
-                return ResourceManager.GetString("ExitBrace", resourceCulture);
+                return StubbedResourceManager.GetString("ExitBrace", resourceCulture);
             }
         }
 
@@ -110,7 +110,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ExitMiddlewareFailure {
             get {
-                return ResourceManager.GetString("ExitMiddlewareFailure", resourceCulture);
+                return StubbedResourceManager.GetString("ExitMiddlewareFailure", resourceCulture);
             }
         }
 
@@ -119,7 +119,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ExitMiddlewareSuccess {
             get {
-                return ResourceManager.GetString("ExitMiddlewareSuccess", resourceCulture);
+                return StubbedResourceManager.GetString("ExitMiddlewareSuccess", resourceCulture);
             }
         }
 
@@ -128,7 +128,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string InstanceDisplay {
             get {
-                return ResourceManager.GetString("InstanceDisplay", resourceCulture);
+                return StubbedResourceManager.GetString("InstanceDisplay", resourceCulture);
             }
         }
 
@@ -137,7 +137,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string OperationFailed {
             get {
-                return ResourceManager.GetString("OperationFailed", resourceCulture);
+                return StubbedResourceManager.GetString("OperationFailed", resourceCulture);
             }
         }
 
@@ -146,7 +146,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string OperationSucceeded {
             get {
-                return ResourceManager.GetString("OperationSucceeded", resourceCulture);
+                return StubbedResourceManager.GetString("OperationSucceeded", resourceCulture);
             }
         }
 
@@ -155,7 +155,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string OutdentFailure {
             get {
-                return ResourceManager.GetString("OutdentFailure", resourceCulture);
+                return StubbedResourceManager.GetString("OutdentFailure", resourceCulture);
             }
         }
 
@@ -164,7 +164,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string Pipeline {
             get {
-                return ResourceManager.GetString("Pipeline", resourceCulture);
+                return StubbedResourceManager.GetString("Pipeline", resourceCulture);
             }
         }
 
@@ -173,7 +173,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ResolveOperationStarting {
             get {
-                return ResourceManager.GetString("ResolveOperationStarting", resourceCulture);
+                return StubbedResourceManager.GetString("ResolveOperationStarting", resourceCulture);
             }
         }
 
@@ -182,7 +182,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ResolveRequestFailed {
             get {
-                return ResourceManager.GetString("ResolveRequestFailed", resourceCulture);
+                return StubbedResourceManager.GetString("ResolveRequestFailed", resourceCulture);
             }
         }
 
@@ -191,7 +191,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ResolveRequestFailedNested {
             get {
-                return ResourceManager.GetString("ResolveRequestFailedNested", resourceCulture);
+                return StubbedResourceManager.GetString("ResolveRequestFailedNested", resourceCulture);
             }
         }
 
@@ -200,7 +200,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ResolveRequestStarting {
             get {
-                return ResourceManager.GetString("ResolveRequestStarting", resourceCulture);
+                return StubbedResourceManager.GetString("ResolveRequestStarting", resourceCulture);
             }
         }
 
@@ -209,7 +209,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ResolveRequestSucceeded {
             get {
-                return ResourceManager.GetString("ResolveRequestSucceeded", resourceCulture);
+                return StubbedResourceManager.GetString("ResolveRequestSucceeded", resourceCulture);
             }
         }
 
@@ -218,7 +218,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string ServiceDisplay {
             get {
-                return ResourceManager.GetString("ServiceDisplay", resourceCulture);
+                return StubbedResourceManager.GetString("ServiceDisplay", resourceCulture);
             }
         }
 
@@ -227,7 +227,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string SubscriptionsDisabled {
             get {
-                return ResourceManager.GetString("SubscriptionsDisabled", resourceCulture);
+                return StubbedResourceManager.GetString("SubscriptionsDisabled", resourceCulture);
             }
         }
 
@@ -236,7 +236,7 @@ namespace Autofac.Diagnostics {
         /// </summary>
         internal static string TargetDisplay {
             get {
-                return ResourceManager.GetString("TargetDisplay", resourceCulture);
+                return StubbedResourceManager.GetString("TargetDisplay", resourceCulture);
             }
         }
     }

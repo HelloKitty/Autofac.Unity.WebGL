@@ -65,7 +65,7 @@ namespace Autofac.Builder {
         /// </summary>
         internal static string BuildCallbacksAlreadyRun {
             get {
-                return ResourceManager.GetString("BuildCallbacksAlreadyRun", resourceCulture);
+                return StubbedResourceManager.GetString("BuildCallbacksAlreadyRun", resourceCulture);
             }
         }
     }

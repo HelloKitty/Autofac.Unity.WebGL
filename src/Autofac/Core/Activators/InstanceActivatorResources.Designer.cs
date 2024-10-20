@@ -65,7 +65,7 @@ namespace Autofac.Core.Activators {
         /// </summary>
         internal static string InstanceActivatorDisposed {
             get {
-                return ResourceManager.GetString("InstanceActivatorDisposed", resourceCulture);
+                return StubbedResourceManager.GetString("InstanceActivatorDisposed", resourceCulture);
             }
         }
     }

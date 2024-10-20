@@ -66,7 +66,7 @@ namespace Autofac {
         /// </summary>
         internal static string ThisAssemblyUnavailable {
             get {
-                return ResourceManager.GetString("ThisAssemblyUnavailable", resourceCulture);
+                return StubbedResourceManager.GetString("ThisAssemblyUnavailable", resourceCulture);
             }
         }
     }

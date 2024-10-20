@@ -66,7 +66,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string SelfRegistrationCannotBeActivated {
             get {
-                return ResourceManager.GetString("SelfRegistrationCannotBeActivated", resourceCulture);
+                return StubbedResourceManager.GetString("SelfRegistrationCannotBeActivated", resourceCulture);
             }
         }
     }

@@ -66,7 +66,7 @@ namespace Autofac.Features.Metadata {
         /// </summary>
         internal static string InvalidViewImplementation {
             get {
-                return ResourceManager.GetString("InvalidViewImplementation", resourceCulture);
+                return StubbedResourceManager.GetString("InvalidViewImplementation", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Features.Metadata {
         /// </summary>
         internal static string MissingMetadata {
             get {
-                return ResourceManager.GetString("MissingMetadata", resourceCulture);
+                return StubbedResourceManager.GetString("MissingMetadata", resourceCulture);
             }
         }
     }

@@ -66,7 +66,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string MustOverrideEquals {
             get {
-                return ResourceManager.GetString("MustOverrideEquals", resourceCulture);
+                return StubbedResourceManager.GetString("MustOverrideEquals", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Core {
         /// </summary>
         internal static string MustOverrideGetHashCode {
             get {
-                return ResourceManager.GetString("MustOverrideGetHashCode", resourceCulture);
+                return StubbedResourceManager.GetString("MustOverrideGetHashCode", resourceCulture);
             }
         }
     }

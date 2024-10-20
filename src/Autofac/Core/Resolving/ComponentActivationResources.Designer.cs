@@ -65,7 +65,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string ActivationAlreadyExecuted {
             get {
-                return ResourceManager.GetString("ActivationAlreadyExecuted", resourceCulture);
+                return StubbedResourceManager.GetString("ActivationAlreadyExecuted", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Resolving {
         /// </summary>
         internal static string ErrorDuringActivation {
             get {
-                return ResourceManager.GetString("ErrorDuringActivation", resourceCulture);
+                return StubbedResourceManager.GetString("ErrorDuringActivation", resourceCulture);
             }
         }
     }

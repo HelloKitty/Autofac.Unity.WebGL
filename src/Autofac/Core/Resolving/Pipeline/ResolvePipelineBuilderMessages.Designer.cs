@@ -65,7 +65,7 @@ namespace Autofac.Core.Resolving.Pipeline {
         /// </summary>
         internal static string CannotAddRegistrationMiddlewareToServicePipeline {
             get {
-                return ResourceManager.GetString("CannotAddRegistrationMiddlewareToServicePipeline", resourceCulture);
+                return StubbedResourceManager.GetString("CannotAddRegistrationMiddlewareToServicePipeline", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Resolving.Pipeline {
         /// </summary>
         internal static string CannotAddServiceMiddlewareToRegistrationPipeline {
             get {
-                return ResourceManager.GetString("CannotAddServiceMiddlewareToRegistrationPipeline", resourceCulture);
+                return StubbedResourceManager.GetString("CannotAddServiceMiddlewareToRegistrationPipeline", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Resolving.Pipeline {
         /// </summary>
         internal static string MiddlewareMustBeInPhaseOrder {
             get {
-                return ResourceManager.GetString("MiddlewareMustBeInPhaseOrder", resourceCulture);
+                return StubbedResourceManager.GetString("MiddlewareMustBeInPhaseOrder", resourceCulture);
             }
         }
     }

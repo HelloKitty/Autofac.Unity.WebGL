@@ -65,7 +65,7 @@ namespace Autofac.Core.Resolving.Middleware {
         /// </summary>
         internal static string CircularDependency {
             get {
-                return ResourceManager.GetString("CircularDependency", resourceCulture);
+                return StubbedResourceManager.GetString("CircularDependency", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Resolving.Middleware {
         /// </summary>
         internal static string MaxDepthExceeded {
             get {
-                return ResourceManager.GetString("MaxDepthExceeded", resourceCulture);
+                return StubbedResourceManager.GetString("MaxDepthExceeded", resourceCulture);
             }
         }
     }

@@ -66,7 +66,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string UnableToChooseFromMultipleConstructors {
             get {
-                return ResourceManager.GetString("UnableToChooseFromMultipleConstructors", resourceCulture);
+                return StubbedResourceManager.GetString("UnableToChooseFromMultipleConstructors", resourceCulture);
             }
         }
     }

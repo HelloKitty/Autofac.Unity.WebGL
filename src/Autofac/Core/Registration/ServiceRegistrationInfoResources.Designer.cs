@@ -65,7 +65,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string NotAfterInitialization {
             get {
-                return ResourceManager.GetString("NotAfterInitialization", resourceCulture);
+                return StubbedResourceManager.GetString("NotAfterInitialization", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string NotDuringInitialization {
             get {
-                return ResourceManager.GetString("NotDuringInitialization", resourceCulture);
+                return StubbedResourceManager.GetString("NotDuringInitialization", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string NotInitialized {
             get {
-                return ResourceManager.GetString("NotInitialized", resourceCulture);
+                return StubbedResourceManager.GetString("NotInitialized", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace Autofac.Core.Registration {
         /// </summary>
         internal static string ServicePipelineCannotBeBuilt {
             get {
-                return ResourceManager.GetString("ServicePipelineCannotBeBuilt", resourceCulture);
+                return StubbedResourceManager.GetString("ServicePipelineCannotBeBuilt", resourceCulture);
             }
         }
     }

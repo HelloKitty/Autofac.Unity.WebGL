@@ -66,7 +66,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string DuplicateItem {
             get {
-                return ResourceManager.GetString("DuplicateItem", resourceCulture);
+                return StubbedResourceManager.GetString("DuplicateItem", resourceCulture);
             }
         }
     }

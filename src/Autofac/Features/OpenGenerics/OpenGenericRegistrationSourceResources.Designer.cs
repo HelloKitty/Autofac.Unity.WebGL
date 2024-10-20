@@ -66,7 +66,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string OpenGenericRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("OpenGenericRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("OpenGenericRegistrationSourceDescription", resourceCulture);
             }
         }
     }

@@ -65,7 +65,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string BoundConstructor {
             get {
-                return ResourceManager.GetString("BoundConstructor", resourceCulture);
+                return StubbedResourceManager.GetString("BoundConstructor", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string CannotInstantitate {
             get {
-                return ResourceManager.GetString("CannotInstantitate", resourceCulture);
+                return StubbedResourceManager.GetString("CannotInstantitate", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string ExceptionDuringInstantiation {
             get {
-                return ResourceManager.GetString("ExceptionDuringInstantiation", resourceCulture);
+                return StubbedResourceManager.GetString("ExceptionDuringInstantiation", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string NonBindableConstructor {
             get {
-                return ResourceManager.GetString("NonBindableConstructor", resourceCulture);
+                return StubbedResourceManager.GetString("NonBindableConstructor", resourceCulture);
             }
         }
     }

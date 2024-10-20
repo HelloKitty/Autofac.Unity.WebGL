@@ -65,7 +65,7 @@ namespace Autofac.Core.Resolving.Middleware {
         /// </summary>
         internal static string ActivatorDidNotPopulateInstance {
             get {
-                return ResourceManager.GetString("ActivatorDidNotPopulateInstance", resourceCulture);
+                return StubbedResourceManager.GetString("ActivatorDidNotPopulateInstance", resourceCulture);
             }
         }
         
@@ -76,7 +76,7 @@ namespace Autofac.Core.Resolving.Middleware {
         /// </summary>
         internal static string UnableToLocateLifetimeScope {
             get {
-                return ResourceManager.GetString("UnableToLocateLifetimeScope", resourceCulture);
+                return StubbedResourceManager.GetString("UnableToLocateLifetimeScope", resourceCulture);
             }
         }
     }

@@ -68,7 +68,7 @@ namespace Autofac.Core.Lifetime {
         /// </summary>
         internal static string MatchingScopeNotFound {
             get {
-                return ResourceManager.GetString("MatchingScopeNotFound", resourceCulture);
+                return StubbedResourceManager.GetString("MatchingScopeNotFound", resourceCulture);
             }
         }
     }

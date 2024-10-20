@@ -66,7 +66,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string FromAndToMustDiffer {
             get {
-                return ResourceManager.GetString("FromAndToMustDiffer", resourceCulture);
+                return StubbedResourceManager.GetString("FromAndToMustDiffer", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string OpenGenericDecoratorRegistrationSourceImplFromTo {
             get {
-                return ResourceManager.GetString("OpenGenericDecoratorRegistrationSourceImplFromTo", resourceCulture);
+                return StubbedResourceManager.GetString("OpenGenericDecoratorRegistrationSourceImplFromTo", resourceCulture);
             }
         }
     }

@@ -66,7 +66,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string AtLeastOneBindingRequired {
             get {
-                return ResourceManager.GetString("AtLeastOneBindingRequired", resourceCulture);
+                return StubbedResourceManager.GetString("AtLeastOneBindingRequired", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string RequiredConstructorNotAvailable {
             get {
-                return ResourceManager.GetString("RequiredConstructorNotAvailable", resourceCulture);
+                return StubbedResourceManager.GetString("RequiredConstructorNotAvailable", resourceCulture);
             }
         }
         
@@ -84,7 +84,7 @@ namespace Autofac.Core.Activators.Reflection {
         /// </summary>
         internal static string TooManyConstructorsMatch {
             get {
-                return ResourceManager.GetString("TooManyConstructorsMatch", resourceCulture);
+                return StubbedResourceManager.GetString("TooManyConstructorsMatch", resourceCulture);
             }
         }
     }

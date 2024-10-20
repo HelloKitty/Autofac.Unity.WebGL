@@ -66,7 +66,7 @@ namespace Autofac.Core.Activators.Delegate {
         /// </summary>
         internal static string NullFromActivationDelegateFor {
             get {
-                return ResourceManager.GetString("NullFromActivationDelegateFor", resourceCulture);
+                return StubbedResourceManager.GetString("NullFromActivationDelegateFor", resourceCulture);
             }
         }
     }

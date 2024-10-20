@@ -66,7 +66,7 @@ namespace Autofac.Features.LazyDependencies {
         /// </summary>
         internal static string LazyRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("LazyRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("LazyRegistrationSourceDescription", resourceCulture);
             }
         }
     }

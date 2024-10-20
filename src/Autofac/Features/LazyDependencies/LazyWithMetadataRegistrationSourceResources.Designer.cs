@@ -66,7 +66,7 @@ namespace Autofac.Features.LazyDependencies {
         /// </summary>
         internal static string LazyWithMetadataRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("LazyWithMetadataRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("LazyWithMetadataRegistrationSourceDescription", resourceCulture);
             }
         }
     }

@@ -66,7 +66,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string ExpressionNotConstructorCall {
             get {
-                return ResourceManager.GetString("ExpressionNotConstructorCall", resourceCulture);
+                return StubbedResourceManager.GetString("ExpressionNotConstructorCall", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string ExpressionNotMethodCall {
             get {
-                return ResourceManager.GetString("ExpressionNotMethodCall", resourceCulture);
+                return StubbedResourceManager.GetString("ExpressionNotMethodCall", resourceCulture);
             }
         }
         
@@ -84,7 +84,7 @@ namespace Autofac.Util {
         /// </summary>
         internal static string ExpressionNotPropertyAccessor {
             get {
-                return ResourceManager.GetString("ExpressionNotPropertyAccessor", resourceCulture);
+                return StubbedResourceManager.GetString("ExpressionNotPropertyAccessor", resourceCulture);
             }
         }
     }

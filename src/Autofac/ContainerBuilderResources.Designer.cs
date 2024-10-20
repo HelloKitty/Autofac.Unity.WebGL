@@ -66,7 +66,7 @@ namespace Autofac {
         /// </summary>
         internal static string BuildCanOnlyBeCalledOnce {
             get {
-                return ResourceManager.GetString("BuildCanOnlyBeCalledOnce", resourceCulture);
+                return StubbedResourceManager.GetString("BuildCanOnlyBeCalledOnce", resourceCulture);
             }
         }
         
@@ -75,7 +75,7 @@ namespace Autofac {
         /// </summary>
         internal static string ErrorAutoActivating {
             get {
-                return ResourceManager.GetString("ErrorAutoActivating", resourceCulture);
+                return StubbedResourceManager.GetString("ErrorAutoActivating", resourceCulture);
             }
         }
     }

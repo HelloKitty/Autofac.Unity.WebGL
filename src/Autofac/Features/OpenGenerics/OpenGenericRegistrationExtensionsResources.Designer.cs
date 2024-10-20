@@ -66,7 +66,7 @@ namespace Autofac.Features.OpenGenerics {
         /// </summary>
         internal static string ImplementorMustBeOpenGenericType {
             get {
-                return ResourceManager.GetString("ImplementorMustBeOpenGenericType", resourceCulture);
+                return StubbedResourceManager.GetString("ImplementorMustBeOpenGenericType", resourceCulture);
             }
         }
     }

@@ -65,7 +65,7 @@ namespace Autofac.Core.Lifetime {
         /// </summary>
         internal static string DuplicateTagDetected {
             get {
-                return ResourceManager.GetString("DuplicateTagDetected", resourceCulture);
+                return StubbedResourceManager.GetString("DuplicateTagDetected", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace Autofac.Core.Lifetime {
         /// </summary>
         internal static string ScopeIsDisposed {
             get {
-                return ResourceManager.GetString("ScopeIsDisposed", resourceCulture);
+                return StubbedResourceManager.GetString("ScopeIsDisposed", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace Autofac.Core.Lifetime {
         /// </summary>
         internal static string SelfConstructingDependencyDetected {
             get {
-                return ResourceManager.GetString("SelfConstructingDependencyDetected", resourceCulture);
+                return StubbedResourceManager.GetString("SelfConstructingDependencyDetected", resourceCulture);
             }
         }
     }

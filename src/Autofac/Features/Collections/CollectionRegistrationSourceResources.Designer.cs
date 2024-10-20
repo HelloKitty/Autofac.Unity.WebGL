@@ -66,7 +66,7 @@ namespace Autofac.Features.Collections {
         /// </summary>
         internal static string CollectionRegistrationSourceDescription {
             get {
-                return ResourceManager.GetString("CollectionRegistrationSourceDescription", resourceCulture);
+                return StubbedResourceManager.GetString("CollectionRegistrationSourceDescription", resourceCulture);
             }
         }
     }

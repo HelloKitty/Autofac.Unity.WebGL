@@ -66,7 +66,7 @@ namespace Autofac.Builder {
         /// </summary>
         internal static string ComponentDoesNotSupportService {
             get {
-                return ResourceManager.GetString("ComponentDoesNotSupportService", resourceCulture);
+                return StubbedResourceManager.GetString("ComponentDoesNotSupportService", resourceCulture);
             }
         }
     }
