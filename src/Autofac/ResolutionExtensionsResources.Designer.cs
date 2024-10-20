@@ -65,7 +65,7 @@ namespace Autofac {
         /// </summary>
         internal static string CouldNotCastInstance {
             get {
-                return ResourceManager.GetString("CouldNotCastInstance", resourceCulture);
+                return StubbedResourceManager.GetString("CouldNotCastInstance", resourceCulture);
             }
         }
     }
